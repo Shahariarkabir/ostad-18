@@ -1,0 +1,15 @@
+<!-- resources/views/contacts/index.blade.php -->
+
+@extends('layouts.app')
+
+@section('content')
+    <div>
+        <h1>Contact List</h1>
+
+        <ul>
+            @foreach ($contacts as $contact)
+                <li>{{ $contact->name }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endsection
